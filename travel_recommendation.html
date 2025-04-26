@@ -19,21 +19,28 @@
       }
       body {
         font-family: "Rubik", sans-serif;
+        background-color: #dadada;
       }
     </style>
   </head>
   <body>
-    <nav class="flex flex-row justify-center items-center py-4 px-8 bg-slate-900">
-      <div class="w-full flex flex-row justify-start items-center gap-4">
+    <nav class="flex flex-row justify-center items-center py-4 px-8 bg-zinc-700">
+      <div class="flex flex-row justify-start items-center gap-6 pl-16">
         <img src="img/airplane.webp" alt="logo" class="w-12 h-12" />
-        <h1 class="text-3xl uppercase font-bold bg-gradient-to-r from-indigo-300 via-white to-indigo-500 text-transparent bg-clip-text">Travel Now</h1>
+        <h1 class="text-3xl uppercase font-bold bg-gradient-to-r from-indigo-300 via-white to-indigo-500 text-transparent bg-clip-text"><a href="#Home">Travel Now</a></h1>
       </div>
 
-      <ul class="flex flex-row justify-center items-center gap-4 text-white">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <ul class="flex flex-row flex-1 justify-center items-center gap-16 text-white text-lg">
+        <li><a href="#Home" class="font-medium bg-gradient-to-r from-indigo-200 via-white to-indigo-400 text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-indigo-300 hover:to-indigo-500 transition-colors duration-300 ">Home</a></li>
+        <li><a href="#AboutUs" class="font-medium bg-gradient-to-r from-indigo-200 via-white to-indigo-400 text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-indigo-300 hover:to-indigo-500 transition-colors duration-300 ">About Us</a></li>
+        <li><a href="#ContactUs" class="font-medium bg-gradient-to-r from-indigo-200 via-white to-indigo-400 text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-indigo-300 hover:to-indigo-500 transition-colors duration-300 ">Contact Us</a></li>
       </ul>
+      <div class="flex flex-row justify-end items-center gap-4 pr-16">
+        <input type="text" name="search-bar" id="search-bar" placeholder="Search..." class="bg-gradient-to-r from-indigo-400 via-indigo-200 to-white text-black px-4 py-2 rounded-md border-1 border-indigo-500 focus:border-indigo-700 focus:outline-none">
+        <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300">
+            Go to
+        </button>
+      </div>
     </nav>
   </body>
 </html>
