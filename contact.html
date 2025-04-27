@@ -23,7 +23,7 @@
   <body>
     <nav class="fixed top-0 left-0 right-0 z-50 flex flex-row justify-center items-center py-4 px-8 bg-zinc-700">
       <div class="flex flex-row justify-start items-center gap-6 pl-16">
-        <img src="img/airplane.webp" alt="logo" class="w-12 h-12" />
+        <img src="/img/airplane.webp" alt="logo" class="w-12 h-12" />
         <h1 class="text-3xl uppercase font-bold bg-gradient-to-r from-indigo-300 via-white to-indigo-500 text-transparent bg-clip-text"><a href="#Home">Travel Now</a></h1>
       </div>
 
@@ -33,8 +33,8 @@
         <li><a href="contact.html"  class="font-medium bg-gradient-to-r from-indigo-200 via-white to-indigo-400 text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-indigo-300 hover:to-indigo-500 transition-colors duration-300 ">Contact Us</a></li>
       </ul>
       <div class="flex flex-row justify-end items-center gap-4 pr-16">
-        <input type="text" name="search-bar" id="search-bar" placeholder="Search..." class="bg-gradient-to-r from-indigo-400 via-indigo-200 to-white text-black px-4 py-2 rounded-md border-1 border-indigo-500 focus:border-indigo-700 focus:outline-none">
-        <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer">
+        <input type="text" name="search-bar" id="search-bar" placeholder="Search..." class="hidden bg-gradient-to-r from-indigo-400 via-indigo-200 to-white text-black px-4 py-2 rounded-md border-1 border-indigo-500 focus:border-indigo-700 focus:outline-none">
+        <button class="hidden bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer">
             Go to
         </button>
       </div>
@@ -43,13 +43,58 @@
     <section class="relative flex flex-row justify-center items-center h-screen">
       <div class="absolute inset-0 backdrop-blur-sm bg-gradient-to-r from-black via-indigo-200/50 to-indigo-300/50" ></div>
       <img src="img/bg.jpg" alt="travel" class="w-full h-full object-cover">
-      <div class="absolute flex flex-col justify-center gap-8 items-center w-full h-full z-10 text-white text-center">
-        <h1 class="text-6xl font-bold uppercase tracking-wide bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Explore dream destination</h1>
-        <p class="text-lg max-w-xl">It encourages exploration of unfamiliar <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">territories, embracing diverse cultures and landscapes</span>, while persuing the desired destination that <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">captivates the heart</span> and ignites a sense of wonder.</p>
-        <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer text-black">
-          BOOK NOW</button>
+      <div class="absolute w-full flex flex-col justify-center gap-8 items-center w-full h-full z-10 text-white text-center">
+        <h1 class="text-6xl font-bold uppercase tracking-wide bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">About us</h1>
+        <section class="flex justify-center items-center min-h-screen py-20">
+          <div class="w-full max-w-2xl mx-4 p-8 bg-white/10 backdrop-blur-md rounded-lg shadow-lg border border-indigo-300/30">
+            <h2 class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Contáctanos</h2>
+            
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-white mb-2">Nombre</label>
+                <input 
+                  type="text" 
+                  id="name"
+                  class="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-indigo-300/50 rounded-md focus:outline-none focus:border-indigo-500 text-white placeholder-white/50"
+                  placeholder="Tu nombre"
+                  required
+                >
+              </div>
+    
+              <div>
+                <label for="email" class="block text-white mb-2">Email</label>
+                <input 
+                  type="email" 
+                  id="email"
+                  class="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-indigo-300/50 rounded-md focus:outline-none focus:border-indigo-500 text-white placeholder-white/50"
+                  placeholder="tu@email.com"
+                  required
+                >
+              </div>
+    
+              <div>
+                <label for="message" class="block text-white mb-2">Mensaje</label>
+                <textarea 
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 bg-white/20 backdrop-blur-sm border border-indigo-300/50 rounded-md focus:outline-none focus:border-indigo-500 text-white placeholder-white/50"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
+    
+              <button 
+                type="submit"
+                class="w-full bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 text-black font-medium py-2 px-4 rounded-md transition-colors duration-300"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </section>
       </div>
     </section>
+
     
 
     <footer class="flex flex-row justify-between items-center py-8 px-16 bg-zinc-700">

@@ -23,7 +23,7 @@
   <body>
     <nav class="fixed top-0 left-0 right-0 z-50 flex flex-row justify-center items-center py-4 px-8 bg-zinc-700">
       <div class="flex flex-row justify-start items-center gap-6 pl-16">
-        <img src="img/airplane.webp" alt="logo" class="w-12 h-12" />
+        <img src="/img/airplane.webp" alt="logo" class="w-12 h-12" />
         <h1 class="text-3xl uppercase font-bold bg-gradient-to-r from-indigo-300 via-white to-indigo-500 text-transparent bg-clip-text"><a href="#Home">Travel Now</a></h1>
       </div>
 
@@ -33,8 +33,8 @@
         <li><a href="contact.html"  class="font-medium bg-gradient-to-r from-indigo-200 via-white to-indigo-400 text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-indigo-300 hover:to-indigo-500 transition-colors duration-300 ">Contact Us</a></li>
       </ul>
       <div class="flex flex-row justify-end items-center gap-4 pr-16">
-        <input type="text" name="search-bar" id="search-bar" placeholder="Search..." class="bg-gradient-to-r from-indigo-400 via-indigo-200 to-white text-black px-4 py-2 rounded-md border-1 border-indigo-500 focus:border-indigo-700 focus:outline-none">
-        <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer">
+        <input type="text" name="search-bar" id="search-bar" placeholder="Search..." class="hidden bg-gradient-to-r from-indigo-400 via-indigo-200 to-white text-black px-4 py-2 rounded-md border-1 border-indigo-500 focus:border-indigo-700 focus:outline-none">
+        <button class="hidden bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer">
             Go to
         </button>
       </div>
@@ -44,10 +44,26 @@
       <div class="absolute inset-0 backdrop-blur-sm bg-gradient-to-r from-black via-indigo-200/50 to-indigo-300/50" ></div>
       <img src="img/bg.jpg" alt="travel" class="w-full h-full object-cover">
       <div class="absolute flex flex-col justify-center gap-8 items-center w-full h-full z-10 text-white text-center">
-        <h1 class="text-6xl font-bold uppercase tracking-wide bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Explore dream destination</h1>
-        <p class="text-lg max-w-xl">It encourages exploration of unfamiliar <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">territories, embracing diverse cultures and landscapes</span>, while persuing the desired destination that <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">captivates the heart</span> and ignites a sense of wonder.</p>
-        <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer text-black">
-          BOOK NOW</button>
+        <h1 class="text-6xl font-bold uppercase tracking-wide bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Contact US</h1>
+          <p class="text-lg max-w-xl">We are a travel agency passionate about creating <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">unique and unforgettable experiences</span>. With over 10 years of experience, we are dedicated to making our clients' <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text border-b border-indigo-500">travel dreams come true</span>, offering exclusive destinations and personalized services.</p>
+          <button class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 hover:bg-gradient-to-r hover:from-indigo-300 hover:via-white hover:to-indigo-500 px-6 py-2 rounded-md border-1 border-indigo-500 transition-colors duration-300 hover:cursor-pointer text-black">
+            CONTACT US</button>
+      </div>
+      <div class="relative flex flex-col justify-center items-center gap-8 z-20">
+        <h2 class="text-4xl font-bold text-white bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Nuestro Equipo</h2>
+        <div class="flex flex-row gap-12">
+          <div class="flex flex-col items-center bg-indigo-500/10 backdrop-blur-sm rounded-lg p-8 border border-indigo-300/30">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="team member" class="w-32 h-32 rounded-full border-4 border-indigo-400 mb-4"/>
+            <h3 class="text-xl font-semibold text-white bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">María González</h3>
+            <p class="text-gray-700 text-sm mt-2 italic">Directora de Viajes</p>
+          </div>
+          
+          <div class="flex flex-col items-center bg-indigo-500/10 backdrop-blur-sm rounded-lg p-8 border border-indigo-300/30">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="team member" class="w-32 h-32 rounded-full border-4 border-indigo-400 mb-4"/>
+            <h3 class="text-xl font-semibold text-white bg-gradient-to-r from-white via-indigo-200 to-indigo-300 text-transparent bg-clip-text">Carlos Rodríguez</h3>
+            <p class="text-gray-700 text-sm mt-2 italic">Especialista en Destinos</p>
+          </div>
+        </div>
       </div>
     </section>
     
